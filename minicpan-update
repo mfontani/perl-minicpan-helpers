@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Updating minicpan.."
+minicpan
+
+echo "Finding outdated modules...";
+OUTDATED_MODULES=$( cpan-outdated -p --exclude-core --mirror file:///STUFF/minicpan )
+
+echo "Outdated modules:";
+echo "$OUTDATED_MODULES"
+
+echo
+
+echo "Updating..."
+echo "$OUTDATED_MODULES" | xargs cpm-install

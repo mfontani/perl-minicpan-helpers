@@ -1,0 +1,3 @@
+local: /STUFF/minicpan
+#remote: ftp://mirrors.uk2.net/pub/CPAN/
+remote: http://bo.mirror.garr.it/mirrors/CPAN/

@@ -1,0 +1,2 @@
+#/bin/bash
+cpm install -v -g --mirror=file:///STUFF/minicpan/ $@
